@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/Css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<header class="navbar">
+    <div class="navbar-left">
+        <img src="/Hình ảnh/Logo (2).png" alt="Vietnam Timeless Charm" class="logo" />
+    </div>
+    </div>
+    <nav class="navbar-center">
+        <a href="index_EN.html">Home</a>
+        <div class="dropdown">
+            <a href="#">Landmarks - Culture - Cuisine</a>
+            <div class="map-dropdown">
+                <img src="/Hình ảnh/banner/ban do.png" usemap="#vietnam-map" alt="Mekong Delta Map" />
+                <map name="vietnam-map">
+                    <area shape="poly" coords="199,217,177,228,212,258,185,302,216,301,222,328,258,335,289,305"
+                        href="cantho_EN.html" alt="Can Tho" />
+                    <area shape="poly" coords="125,320,111,419,119,313,238,337,152,415" href="camau_EN.html"
+                        alt="Ca Mau" />
+                    <area shape="poly" coords="239,241,299,218,315,236,335,269,314,305" href="vinhlong_EN.html"
+                        alt="Vinh Long" />
+                    <area shape="poly" coords="152,148,95,230,155,250,122,321,175,323,195,264,164,223,190,203"
+                        href="angiang_EN.html" alt="An Giang" />
+                    <area shape="poly" coords="171,150,196,139,233,230,247,188,350,199,350,226" href="dongthap_EN.html"
+                        alt="Dong Thap" />
+                    <area shape="poly"
+                        coords="312,68,263,37,245,94,285,151,233,130,208,139,264,184,321,188,343,175,306,139"
+                        href="tayninh_EN.html" alt="Tây Ninh" />
+                </map>
+            </div>
+        </div>
+        <a href="blog_EN.html">Blog</a>
+        <a href="media_EN.html">Media</a>
+    </nav>
+    <div class="navbar-right">
+        <select id="languageSwitcher">
+            <option value="vi">VI</option>
+            <option value="en" selected>EN</option>
+        </select>
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+</header>
+
+<body>
+    <div class="content-layout">
+        <article class="blog-post">
+            <h2>Western Vietnam Experience – Journey to the Land of Rivers</h2>
+            <p class="post-meta">Posted on July 15, 2025 • by <strong>Ánh Phụng</strong></p>
+            <img src="/Hình ảnh/các tỉnh/Cà Mau/hòn núi bạc.jpg" alt="Watery Western Vietnam">
+
+            <p class="post-content">
+                The Western region of Vietnam is not only about Can Tho with its Ninh Kieu Wharf or the bustling Cai
+                Rang floating market. It is also a journey through fruit-laden orchards in Tien Giang, the rustic
+                village paths of Ben Tre, or the echoing melodies of traditional "vong co" music across the green fields
+                of An Giang. Further south, Ca Mau emerges as the southernmost tip of the country – where the land meets
+                the sea, vast mangrove forests thrive, and kind-hearted, simple people live.
+                <br><br>
+                This article is a space for you to share your impressions, stories, photos, and honest reviews of your
+                journey through the land of rivers – from Can Tho to Ca Mau and across the entire Mekong Delta.
+            </p>
+
+            <div class="related-posts-row">
+                <aside class="related-post-horizontal">
+                    <img src="/Hình ảnh/du lịt/nha co.png" alt="Bac Lieu" class="thumbnail">
+                    <div class="related-info">
+                        <h4>“Da Co Hoai Lang” – Echo of the Southern Land</h4>
+                        <p class="post-snippet">The birthplace of cải lương opera, sea breezes, and warm-hearted locals.
+                        </p>
+                        <a href="#" class="read-more">Read more →</a>
+                    </div>
+                </aside>
+
+                <aside class="related-post-horizontal">
+                    <img src="/Hình ảnh/du lịt/chua ang.webp" alt="Tra Vinh" class="thumbnail">
+                    <div class="related-info">
+                        <h4>The Land of Ancient Khmer Temples – Where Cultural Heritage Thrives</h4>
+                        <p class="post-snippet">A place preserving Khmer culture through temples and festivals.</p>
+                        <a href="#" class="read-more">Read more →</a>
+                    </div>
+                </aside>
+            </div>
+
+
+            <div class="comments-section">
+                <h3>Đánh giá & Bình luận</h3>
+                <form id="comment-form">
+                    <input type="text" id="name" placeholder="Tên của bạn" required>
+                    <textarea id="comment" placeholder="Bạn đã trải nghiệm gì ở miền Tây?" required></textarea>
+                    <label>Ảnh (không bắt buộc): <input type="file" id="comment-image" accept="image/*"></label>
+
+                    <div class="stars" id="comment-stars">
+                        <span data-star="1">★</span>
+                        <span data-star="2">★</span>
+                        <span data-star="3">★</span>
+                        <span data-star="4">★</span>
+                        <span data-star="5">★</span>
+                    </div>
+
+                    <button type="submit">Gửi đánh giá</button>
+                </form>
+
+                <ul id="comment-list">
+                    <li>
+                        <div><strong>Minh Anh</strong></div>
+                        <div class="comment-time">16/07/2025 08:30</div>
+                        <div>Mình đã đi xuồng ba lá ở Cái Bè – Tiền Giang, cảm giác thật thư thái, cảnh vật quá đỗi yên
+                            bình.</div>
+                        <div class="comment-stars">★★★★☆</div>
+                        <img src="/Hình ảnh/các tỉnh/Tiền Giang/caii be.png" alt="ảnh bình luận">
+                    </li>
+                    <li>
+                        <div><strong>Quốc Huy</strong></div>
+                        <div class="comment-time">15/07/2025 20:45</div>
+                        <div>Trang viết rất truyền cảm, mình muốn ghé thử chợ nổi Miền Tây ngay sau khi đọc xong!</div>
+                        <div class="comment-stars">★★★★★</div>
+                    </li>
+                    <li>
+                        <div><strong>Trang Đào</strong></div>
+                        <div class="comment-time">15/07/2025 15:12</div>
+                        <div>Miền Tây đúng kiểu chân tình, đồ ăn thì ngon miễn bàn, bánh xèo, cá lóc nướng trui đều xuất
+                            sắc!</div>
+                        <div class="comment-stars">★★★★☆</div>
+                    </li>
+                    <li>
+                        <div><strong>Sophia Miller</strong></div>
+                        <div class="comment-time">17/07/2025 09:18</div>
+                        <div>
+                            Such a peaceful escape! I took a boat ride in Can Tho during sunrise, and it was absolutely
+                            magical. People were so friendly, and the floating market was a truly unique experience.
+                        </div>
+                        <div class="comment-stars">★★★★★</div>
+                    </li>
+
+                    <li>
+                        <div><strong>James Carter</strong></div>
+                        <div class="comment-time">16/07/2025 22:06</div>
+                        <div>
+                            I never imagined the Mekong Delta would be this vibrant. The food, the rivers, the lush
+                            greenery — it’s a perfect mix of adventure and tranquility. Highly recommend visiting!
+                        </div>
+                        <div class="comment-stars">★★★★☆</div>
+                    </li>
+
+                </ul>
+            </div>
+        </article>
+        <aside class="sidebar-right">
+            <div class="side-note">
+                <h3>🌿 A Friendly Note When Visiting the Mekong Delta</h3>
+                <p>
+                    Wake up early to catch the floating market at sunrise. Don’t hesitate to ride a small boat or cycle
+                    along the peaceful village paths.
+                    And remember, if you're offered fresh fruits from the orchard – don’t refuse, as it’s the Mekong
+                    people's way of showing heartfelt hospitality.
+                </p>
+            </div>
+
+            <div class="side-posts">
+                <h4>Other Articles</h4>
+                <div class="mini-post">
+                    <img src="/Hình ảnh/các tỉnh/Sóc Trăng/chua-doi-soc-trang-1.jpg" alt="Soc Trang">
+                    <div class="mini-post-title">Soc Trang – Land of Festivals and Temples</div>
+                </div>
+                <div class="mini-post">
+                    <img src="/Hình ảnh/các tỉnh/An Giang/Nhìn từ đỉnh Núi Sập, An Giang.jpg" alt="An Giang">
+                    <div class="mini-post-title">An Giang – Echoes of Vọng Cổ Across the Fields</div>
+                </div>
+                <div class="mini-post">
+                    <img src="/Hình ảnh/các tỉnh/Cà Mau/camau.webp" alt="Ca Mau">
+                    <div class="mini-post-title">Ca Mau – The Southernmost Point of the Country</div>
+                </div>
+            </div>
+        </aside>
+
+
+
+    </div>
+</body>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-col newsletter">
+            <h3>Subscribe for the Latest Updates</h3>
+            <p>Receive monthly updates on Southwest travel stories directly to your email.</p>
+            <input type="email" placeholder="Your email">
+            <button>Subscribe</button>
+        </div>
+        <div class="footer-col">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p style="margin-top:10px;">Find inspiration by exploring the Southwest region on social platforms.</p>
+        </div>
+        <div class="footer-col">
+            <h3>About Us</h3>
+            <p>
+                We provide information about traveling in the Mekong Delta. Discover stunning landscapes, unique
+                culture, and diverse cuisine across this beautiful country of Vietnam.
+            </p>
+        </div>
+    </div>
+    <div class="footer-bottom">&copy; Southwest Travel 2025</div>
+</footer>
+
+
+</html>
+<style>
+    /* Bố cục 2 cột */
+    .content-layout {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    /* Sidebar bên phải */
+    .sidebar-right {
+        width: 300px;
+        flex-shrink: 0;
+    }
+
+    /* Box lời nhắn */
+    .side-note {
+        background-color: #fffbe6;
+        border-left: 4px solid #f0c000;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+        font-style: italic;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    .side-note h3 {
+        margin-top: 0;
+        font-size: 18px;
+        color: #a15c00;
+        font-weight: 600;
+        border-bottom: 1px solid #f0c000;
+        padding-bottom: 5px;
+    }
+
+    /* Các bài viết mini */
+    .side-posts h4 {
+        font-size: 17px;
+        margin-bottom: 15px;
+        color: #444;
+    }
+
+    .mini-post {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        background: #f9f9f9;
+        border-radius: 8px;
+        padding: 6px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        transition: background 0.2s;
+    }
+
+    .mini-post:hover {
+        background: #fff2d6;
+    }
+
+    .mini-post img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-right: 10px;
+    }
+
+    .mini-post-title {
+        font-size: 14px;
+        color: #333;
+        font-weight: 500;
+    }
+
+
+    .blog-post {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        background-color: #f2f8f6;/
+    }
+
+    .blog-post img {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        border-radius: 8px;
+    }
+
+    .post-meta {
+        font-size: 14px;
+        color: #777;
+    }
+
+    .comments-section {
+        margin-top: 40px;
+    }
+
+    .comments-section h3 {
+        margin-bottom: 15px;
+    }
+
+    #comment-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    #comment-form input,
+    #comment-form textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: inherit;
+    }
+
+    #comment-form textarea {
+        resize: vertical;
+        min-height: 80px;
+    }
+
+    #comment-form label {
+        font-size: 14px;
+        color: #555;
+    }
+
+    #comment-form button {
+        padding: 10px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 150px;
+    }
+
+    #comment-form button:hover {
+        background: #0056b3;
+    }
+
+    /* Ngôi sao chọn */
+    .stars span {
+        font-size: 24px;
+        color: #ccc;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+
+    .stars span.selected,
+    .stars span:hover,
+    .stars span:hover~span {
+        color: gold;
+    }
+
+    /* Danh sách bình luận */
+    #comment-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    #comment-list li {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 15px;
+        background-color: #f9f9f9;
+    }
+
+    #comment-list img {
+        max-width: 150px;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    .comment-time {
+        font-size: 12px;
+        color: #888;
+        margin-bottom: 5px;
+    }
+
+    .comment-stars {
+        color: gold;
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+
+    footer {
+        background-color: #033e3e;
+        color: #fff;
+        padding: 60px 20px;
+    }
+
+    .footer-container {
+        max-width: 1300px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-col {
+        flex: 1 1 300px;
+        margin: 20px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 14px;
+        color: #ccc;
+    }
+
+    .related-posts-row {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        /* Để tự xuống dòng trên mobile */
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .related-post-horizontal {
+        display: flex;
+        align-items: flex-start;
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        width: 320px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .related-post-horizontal .thumbnail {
+        width: 80px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-right: 10px;
+    }
+
+    .related-post-horizontal .related-info {
+        flex: 1;
+    }
+
+    .related-post-horizontal h4 {
+        font-size: 14px;
+        margin: 0 0 4px 0;
+        color: #333;
+    }
+
+    .related-post-horizontal .post-snippet {
+        font-size: 13px;
+        color: #555;
+        margin: 0 0 6px 0;
+    }
+
+    .related-post-horizontal .read-more {
+        font-size: 12px;
+        color: #0077cc;
+        text-decoration: none;
+        font-weight: bold;
+    }
+</style>
+
+<script>
+    let commentRating = 0;
+    const commentStars = document.querySelectorAll('#comment-stars span');
+
+    commentStars.forEach((star, index) => {
+        star.addEventListener('click', () => {
+            commentRating = index + 1;
+            commentStars.forEach(s => s.classList.remove('selected'));
+            for (let i = 0; i <= index; i++) {
+                commentStars[i].classList.add('selected');
+            }
+        });
+    });
+
+    document.getElementById('comment-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const comment = document.getElementById('comment').value;
+        const imageInput = document.getElementById('comment-image');
+        const time = new Date().toLocaleString();
+        let imageTag = '';
+
+        if (imageInput.files.length > 0) {
+            const imageURL = URL.createObjectURL(imageInput.files[0]);
+            imageTag = `<img src="${imageURL}" alt="ảnh bình luận">`;
+        }
+
+        const stars = '★'.repeat(commentRating) + '☆'.repeat(5 - commentRating);
+
+        const newComment = `
+      <li>
+        <div><strong>${name}</strong></div>
+        <div class="comment-time">${time}</div>
+        <div>${comment}</div>
+        <div class="comment-stars">${stars}</div>
+        ${imageTag}
+      </li>
+    `;
+
+        document.getElementById('comment-list').innerHTML = newComment + document.getElementById('comment-list').innerHTML;
+        this.reset();
+        commentStars.forEach(s => s.classList.remove('selected'));
+        commentRating = 0;
+    });
+
+    // tieng anh
+    document.getElementById("languageSwitcher").addEventListener("change", function () {
+        const lang = this.value;
+        if (lang === "vi") {
+            window.location.href = "blog.html"; // đường dẫn trang tiếng Anh của bạn
+        } else {
+            window.location.href = "blog_EN.html"; // đường dẫn trang tiếng Việt
+        }
+    });
+</script>
+
+
+</body>
+
+</html>

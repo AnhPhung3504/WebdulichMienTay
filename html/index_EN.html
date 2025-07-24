@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memoirs of the Water Region</title>
+  <link rel="stylesheet" href="/Css/style.css" />
+  <link rel="stylesheet" href="/js/index.js" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="navbar-left">
+      <img src="/Hình ảnh/Logo (2).png" alt="Vietnam Timeless Charm" class="logo" />
+    </div>
+    </div>
+    <nav class="navbar-center">
+      <a href="index_EN.html">Home</a>
+      <div class="dropdown">
+        <a href="#">Landmarks - Culture - Cuisine</a>
+        <div class="map-dropdown">
+          <img src="/Hình ảnh/banner/ban do.png" usemap="#vietnam-map" alt="Mekong Delta Map" />
+          <map name="vietnam-map">
+            <area shape="poly" coords="199,217,177,228,212,258,185,302,216,301,222,328,258,335,289,305"
+              href="cantho_EN.html" alt="Can Tho" />
+            <area shape="poly" coords="125,320,111,419,119,313,238,337,152,415" href="camau_EN.html" alt="Ca Mau" />
+            <area shape="poly" coords="239,241,299,218,315,236,335,269,314,305" href="vinhlong_EN.html"
+              alt="Vinh Long" />
+            <area shape="poly" coords="152,148,95,230,155,250,122,321,175,323,195,264,164,223,190,203"
+              href="angiang_EN.html" alt="An Giang" />
+            <area shape="poly" coords="171,150,196,139,233,230,247,188,350,199,350,226" href="dongthap_EN.html"
+              alt="Dong Thap" />
+            <area shape="poly" coords="312,68,263,37,245,94,285,151,233,130,208,139,264,184,321,188,343,175,306,139"
+              href="tayninh_EN.html" alt="Tây Ninh" />
+          </map>
+        </div>
+      </div>
+      <a href="blog_EN.html">Blog</a>
+      <a href="media_EN.html">Media</a>
+    </nav>
+    <div class="navbar-right">
+      <select id="languageSwitcher">
+        <option value="vi">VI</option>
+        <option value="en" selected>EN</option>
+      </select>
+      <button class="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="slideshow-container">
+        <div class="slide fade"><img src="/Hình ảnh/Ảnh chung chung ĐBSCL/du lịch miền tây/en/Design.png"
+            alt="Banner 1"></div>
+        <div class="slide fade"><img src="/Hình ảnh/Ảnh chung chung ĐBSCL/du lịch miền tây/en/2.png" alt="Banner 2">
+        </div>
+        <div class="slide fade"><img src="/Hình ảnh/Ảnh chung chung ĐBSCL/du lịch miền tây/en/3.png" alt="Banner 3">
+        </div>
+        <div class="slide fade"><img src="/Hình ảnh/Ảnh chung chung ĐBSCL/du lịch miền tây/en/4.png" alt="Banner 4">
+        </div>
+        <div class="slide fade"><img src="/Hình ảnh/Ảnh chung chung ĐBSCL/du lịch miền tây/en/5.png" alt="Banner 5">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <div class="dots" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+      <div class="hero-text">Southwest Vietnam</div>
+    </section>
+
+    <section class="introduce">
+      <div class="introduce-text">
+        <h1>The Waterway Region of the Southwest</h1>
+        <p>
+          The Mekong Delta, also known as the Southwest region of Vietnam, is a fertile land with a vast network of
+          rivers, endless rice fields, and lush fruit orchards. Here, you will see bustling boats on rivers, vibrant
+          floating markets from early morning, and kind, hospitable people. Southwestern cuisine is rustic yet
+          flavorful—from fragrant grilled snakehead fish, crispy pancakes (bánh xèo), to sweet tropical fruits like
+          durian, mango, and rambutan. Traveling through the Southwest is a slow-paced experience: rowing a sampan
+          through melaleuca forests, listening to folk songs on the river, or simply relaxing to the peaceful rhythm of
+          rural life. The region may not be flashy, but it's genuine and simple. Once you visit, you'll surely remember
+          the golden sunshine, the aroma of ripened rice, and the radiant smiles of the locals.
+        </p>
+      </div>
+    </section>
+
+    <section class="events-section">
+      <h2>HIGHLIGHT EVENTS</h2>
+      <p>See upcoming festivals in the Southwest region</p>
+      <div class="events-wrapper">
+        <div class="event-gallery" id="eventGallery"></div>
+        <div class="month-filter">
+          <button class="month-button" onclick="filterEvents('01')">JAN</button>
+          <button class="month-button" onclick="filterEvents('02')">FEB</button>
+          <button class="month-button" onclick="filterEvents('03')">MAR</button>
+          <button class="month-button" onclick="filterEvents('04')">APR</button>
+          <button class="month-button active" onclick="filterEvents('05')">MAY</button>
+          <button class="month-button" onclick="filterEvents('06')">JUN</button>
+          <button class="month-button" onclick="filterEvents('07')">JUL</button>
+          <button class="month-button" onclick="filterEvents('08')">AUG</button>
+          <button class="month-button" onclick="filterEvents('09')">SEP</button>
+          <button class="month-button" onclick="filterEvents('10')">OCT</button>
+          <button class="month-button" onclick="filterEvents('11')">NOV</button>
+          <button class="month-button" onclick="filterEvents('12')">DEC</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="travel-tips">
+      <h2>TRAVEL TIPS YOU MUST KNOW</h2>
+      <p>Prepare for your trip – explore extremely helpful articles</p>
+      <div class="tips-grid">
+        <!-- TRANSPORT -->
+        <a href="https://www.traveloka.com/vi-vn/contactus" class="tip-item">
+          <img src="/Hình ảnh/Ảnh chung chung ĐBSCL/transport.jpg" alt="Transport">
+          <span>TRANSPORT</span>
+        </a>
+
+        <!-- WEATHER -->
+        <a href="https://weatherwidget.io/" class="tip-item">
+          <img src="/Hình ảnh/Ảnh chung chung ĐBSCL/weather.jpg" alt="Weather">
+          <span>WEATHER</span>
+        </a>
+
+        <!-- SAFETY -->
+        <a href="antoan_EN.html" class="tip-item">
+          <img src="/Hình ảnh/Ảnh chung chung ĐBSCL/safe.jpg" alt="Safety">
+          <span>SAFETY</span>
+        </a>
+
+        <!-- HISTORY -->
+        <a href="https://cand.com.vn/So-tay/Mien-Tay-cua-lich-su-Viet-Nam-i567042/" class="tip-item">
+          <img src="/Hình ảnh/Ảnh chung chung ĐBSCL/history.jpg" alt="History">
+          <span>HISTORY</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="must-see-section">
+      <h2 class="section-title">MUST-VISIT DESTINATIONS</h2>
+      <p class="section-subtitle">
+        Let’s explore the rustic, peaceful beauty of the Southwest right here.
+      </p>
+      <div class="grid-container">
+        <!-- Ô 1 -->
+        <div class="grid-item slideshows">
+          <img src="/Hình ảnh/các tỉnh/An Giang/Rừng trà sư.jpg" alt="An Giang">
+          <img src="/Hình ảnh/các tỉnh/kiên giang/dao-nam-du-phu-quoc.jpg" alt="Kiên Giang" style="display: none;">
+          <span class="caption">An Giang</span>
+        </div>
+
+        <!-- Ô 2 -->
+        <div class="grid-item slideshows">
+          <img src="/Hình ảnh/các tỉnh/Sóc Trăng/samrong.jpg" alt="Sóc Trăng">
+          <img src="/Hình ảnh/các tỉnh/Hậu giang/khu-bao-ton-thien-nhien-lung-ngoc-hoang.jpg" alt="Hau Giang">
+          <img src="/Hình ảnh/các tỉnh/Cần thơ/bến ninh kiều.jpg" alt="Cần Thơ" style="display: none;">
+          <span class="caption">Cần Thơ</span>
+        </div>
+
+        <!-- Ô 3 -->
+        <div class="grid-item slideshows">
+          <img src="/Hình ảnh/các tỉnh/Long An/cánh đồng bất tận.jpg" alt="Long An">
+          <span class="caption">Long An</span>
+        </div>
+
+        <!-- Ô 4 -->
+        <div class="grid-item slideshows">
+          <img src="/Hình ảnh/các tỉnh/Vĩnh Long/lò gach.jpg" alt="Vĩnh Long" style="display: none;">
+          <img src="/Hình ảnh/các tỉnh/Trà Vinh/cù lao Tân Quy.jpg" alt="Trà Vinh">
+          <img src="/Hình ảnh/các tỉnh/Bến tre/bến tre.jpg" alt="Bến Tre">
+          <span class="caption">Vĩnh Long</span>
+        </div>
+
+        <!-- Ô 5 -->
+        <div class="grid-item slideshows">
+          <img src="/Hình ảnh/các tỉnh/Cà Mau/mũi.jpg" alt="Cà Mau">
+          <img src="/Hình ảnh/các tỉnh/Bạc Liêu/cánh đồng điện gió.jpg" alt="Bạc Liêu">
+          <span class="caption">Cà Mau</span>
+        </div>
+        <!-- Ô 6 -->
+        <div class="grid-item slideshows">
+          <img src="/Hình ảnh/các tỉnh/Tiền Giang/biển gò công.jpg" alt="Tiền Giang">
+          <img src="/Hình ảnh/các tỉnh/Đồng tháp/lang hoa sadec.jpg" alt="Đồng Tháp">
+          <span class="caption">Đồng Tháp</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="slideshow-wrapper1">
+      <h2 style="font-size: 28px; margin-bottom: 20px;">Travel Handbooks for the Southwest</h2>
+      <div class="slideshow-container1">
+        <div class="slide1 active1">
+          <img src="../Hình ảnh/tong hop/1.png" alt="Ảnh 1">
+        </div>
+        <div class="slide1">
+          <img src="../Hình ảnh/tong hop/2.png" alt="Ảnh 2">
+        </div>
+        <div class="slide1">
+          <img src="../Hình ảnh/tong hop/3.png" alt="Ảnh 3">
+        </div>
+        <div class="slide1">
+          <img src="../Hình ảnh/tong hop/4.png" alt="Ảnh 3">
+        </div>
+        <div class="slide1">
+          <img src="../Hình ảnh/tong hop/5.png" alt="Ảnh 3">
+        </div>
+        <div class="slide1">
+          <img src="../Hình ảnh/tong hop/6.png" alt="Ảnh 3">
+        </div>
+        <div class="slide1">
+          <img src="../Hình ảnh/tong hop/7.png" alt="Ảnh 3">
+        </div>
+        <div class="slide1">
+          <img src="../Hình ảnh/tong hop/8.png" alt="Ảnh 3">
+        </div>
+        <div class="slide1">
+          <img src="../Hình ảnh/tong hop/9.png" alt="Ảnh 3">
+        </div>
+        <div class="slide1">
+          <img src="../Hình ảnh/tong hop/10.png" alt="Ảnh 3">
+        </div>
+        <div class="slide1">
+          <img src="../Hình ảnh/tong hop/11.png" alt="Ảnh 3">
+        </div>
+        <div class="slide1">
+          <img src="../Hình ảnh/tong hop/12.png" alt="Ảnh 3">
+        </div>
+        <div class="slide1">
+          <img src="../Hình ảnh/tong hop/13.png" alt="Ảnh 3">
+        </div>
+      </div>
+      <button class="nav1 prev1" onclick="changeSlide(-1)">❮</button>
+      <button class="nav1 next1" onclick="changeSlide(1)">❯</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col newsletter">
+        <h3>Subscribe for the Latest Updates</h3>
+        <p>Receive monthly updates on Southwest travel stories directly to your email.</p>
+        <input type="email" placeholder="Your email">
+        <button>Subscribe</button>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p style="margin-top:10px;">Find inspiration by exploring the Southwest region on social platforms.</p>
+      </div>
+      <div class="footer-col">
+        <h3>About Us</h3>
+        <p>
+          We provide information about traveling in the Mekong Delta. Discover stunning landscapes, unique culture, and
+          diverse cuisine across this beautiful country of Vietnam.
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; Southwest Travel 2025</div>
+  </footer>
+  <script src="../js/index_en.js"></script>
+</body>
+
+</html>
+<script>
+  let current1 = 0;
+
+  function showSlide(index) {
+    const slides1 = document.querySelectorAll('.slide1');
+    slides1.forEach((slide, i) => {
+      slide.classList.remove('active1');
+      if (i === index) {
+        slide.classList.add('active1');
+      }
+    });
+  }
+
+  function changeSlide(direction) {
+    const slides1 = document.querySelectorAll('.slide1');
+    current1 += direction;
+    if (current1 < 0) current1 = slides1.length - 1;
+    if (current1 >= slides1.length) current1 = 0;
+    showSlide(current1);
+  }
+
+  // Khởi tạo slide đầu tiên
+  document.addEventListener("DOMContentLoaded", () => {
+    showSlide(current1);
+
+    // (Tuỳ chọn) Tự động chuyển slide sau 5 giây
+    setInterval(() => {
+      changeSlide(1);
+    }, 5000);
+  });
+
+
+  const slideshows = document.querySelectorAll('.slideshows');
+
+  slideshows.forEach(slideshow => {
+    const images = slideshow.querySelectorAll('img');
+    let index = 0;
+
+    setInterval(() => {
+      images[index].style.display = 'none';
+      index = (index + 1) % images.length;
+      images[index].style.display = 'block';
+    }, 2000); // đổi ảnh mỗi 3 giây
+  });
+
+
+  // tieng anh
+  document.getElementById("languageSwitcher").addEventListener("change", function () {
+    const lang = this.value;
+    if (lang === "vi") {
+      window.location.href = "index.html"; // đường dẫn trang tiếng Anh của bạn
+    } else {
+      window.location.href = "index_EN.html"; // đường dẫn trang tiếng Việt
+    }
+  });
+</script>

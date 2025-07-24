@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cà Mau</title>
+  <link rel="stylesheet" href="/Css/style.css" />
+  <link rel="stylesheet" href="/js/index.js" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="navbar-left">
+      <img src="/Hình ảnh/Logo (2).png" alt="Vietnam Timeless Charm" class="logo" />
+    </div>
+    <nav class="navbar-center">
+      <a href="index.html">Trang chủ</a>
+      <div class="dropdown">
+        <a href="#">Địa danh - Văn hóa - Ẩm thực</a>
+        <div class="map-dropdown">
+          <img src="/Hình ảnh/banner/ban do.png" usemap="#vietnam-map" alt="Bản đồ ĐBSCL" />
+          <map name="vietnam-map">
+            <area shape="poly" coords="199,217,177,228,212,258,185,302,216,301,222,328,258,335,289,305"
+              href="cantho.html" alt="Cần Thơ" />
+            <area shape="poly" coords="125,320,111,419,119,313,238,337,152,415" href="camau.html" alt="Cà Mau" />
+            <area shape="poly" coords="239,241,299,218,315,236,335,269,314,305" href="vinhlong.html" alt="Vĩnh Long" />
+            <area shape="poly" coords="152,148,95,230,155,250,122,321,175,323,195,264,164,223,190,203"
+              href="angiang.html" alt="An Giang" />
+            <area shape="poly" coords="171,150,196,139,233,230,247,188,350,199,350,226" href="dongthap.html"
+              alt="Đồng Tháp" />
+            <area shape="poly" coords="312,68,263,37,245,94,285,151,233,130,208,139,264,184,321,188,343,175,306,139"
+              href="tayninh.html" alt="Tây Ninh" />
+          </map>
+        </div>
+      </div>
+      <a href="blog.html">Blog</a>
+      <a href="media.html">Hình ảnh</a>
+    </nav>
+    <div class="navbar-right">
+      <select id="languageSwitcher">
+        <option value="vi" selected>VI</option>
+        <option value="en">EN</option>
+      </select>
+      <button class="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+  </header>
+  <section class="banner-section">
+    <!-- <div class="banner-container">
+    <img src="/Hình ảnh/Ảnh chung chung ĐBSCL/Xanh dương và Trắng Du lịch Kế hoạch Ảnh ghép.png" alt="Banner" class="banner-image">
+  </div> -->
+    <section class="pdf-scroll" id="top">
+      <div class="pdf-page"><img src="../Hình ảnh/banner du lịch (1)/Ca Mau/7.png" alt="Trang bìa"></div>
+      <div class="pdf-page"><img src="../Hình ảnh/banner du lịch (1)/Ca Mau/53.png" alt="Trang 1"></div>
+      <div class="pdf-page"><img src="../Hình ảnh/banner du lịch (1)/Ca Mau/54.png" alt="Trang 1"></div>
+      <div class="pdf-page"><img src="../Hình ảnh/banner du lịch (1)/Ca Mau/55.png" alt="Trang 1"></div>
+      <div class="pdf-page"><img src="../Hình ảnh/banner du lịch (1)/Ca Mau/56.png" alt="Trang 1"></div>
+      <div class="pdf-page"><img src="../Hình ảnh/banner du lịch (1)/Ca Mau/57.png" alt="Trang 1"></div>
+      <div class="pdf-page"><img src="../Hình ảnh/banner du lịch (1)/Ca Mau/58.png" alt="Trang 1"></div>
+      <div class="pdf-page"><img src="../Hình ảnh/banner du lịch (1)/Ca Mau/59.png" alt="Trang 1"></div>
+      <div class="pdf-page"><img src="../Hình ảnh/banner du lịch (1)/Ca Mau/60.png" alt="Trang 1"></div>
+      <div class="pdf-page"><img src="../Hình ảnh/banner du lịch (1)/Ca Mau/61.png" alt="Trang 1"></div>
+
+    </section>
+
+    <!-- Hiển thị số trang -->
+    <div class="page-indicator" id="pageIndicator">Trang 1 / 6</div>
+
+    <!-- Nút lên đầu -->
+    <button class="scroll-top" onclick="scrollToTop()">⬆</button>
+
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-col newsletter">
+          <h3>Đăng ký để nhận thông tin mới nhất</h3>
+          <p>Cập nhật những câu chuyện du lịch Miền Tây mới nhất mỗi tháng ngay trong email của bạn.</p>
+          <input type="email" placeholder="Your email">
+          <button>Subscribe</button>
+        </div>
+
+        <div class="footer-col">
+          <h3>Theo dõi chúng tôi</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+          <p style="margin-top:10px;">Tìm cảm hứng qua việc khám phá Miền Tây nam bộ trên các nền tảng xã hội.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Về chúng tôi</h3>
+          <p>Chúng tôi cung cấp các thông tin về du lịch miền Tây Nam bộ, Khám phá những cảnh đẹp tuyệt vời, văn hóa đặc
+            sắc và ẩm thực phong phú khắp trong đất nước Việt Nam xinh đẹp này.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; Du lịch Miền tây 2025
+      </div>
+    </footer>
+    <!-- <script src="../js/index.js"></script> -->
+</body>
+
+
+<style>
+  body {
+    background-color: #d4d3d3;
+  }
+
+  .book-container {
+    perspective: 2000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .book {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+
+  .page {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    backface-visibility: hidden;
+    border-radius: 5px;
+  }
+
+  .page.left {
+    left: 0;
+    transform-origin: left;
+    z-index: 2;
+    background-color: white;
+  }
+
+  .page.right {
+    left: 300px;
+    transform-origin: right;
+    z-index: 1;
+    background-color: white;
+  }
+
+  .page.cover.front {
+    width: 300px;
+    left: 0;
+    z-index: 4;
+    transform-origin: left;
+    background-color: #fff;
+  }
+
+  .page.cover.back {
+    width: 300px;
+    left: 300px;
+    z-index: 0;
+    transform: rotateY(180deg);
+    background-color: #fff;
+  }
+
+  .controls {
+    margin-top: 20px;
+  }
+
+  button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .pdf-scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+
+  .pdf-page {
+    width: 100%;
+    max-width: 700px;
+    aspect-ratio: 1414 / 2000;
+    margin: 40px auto;
+    padding: 0;
+    background: none;
+    overflow: hidden;
+  }
+
+  .pdf-page img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
+
+  /* Số trang hiện tại */
+  .page-indicator {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 6px 14px;
+    font-size: 16px;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+
+  /* Nút cuộn lên đầu */
+  .scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 14px;
+    font-size: 20px;
+    background-color: #033e3e;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+  }
+
+  .scroll-top.show {
+    display: block;
+  }
+
+  .pdf-scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  .pdf-page {
+    width: 100%;
+    max-width: 700px;
+    /* hoặc bạn chỉnh tùy ý */
+    aspect-ratio: 1414 / 2000;
+    margin: 0 auto 20px;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .pdf-page img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .pdf-page::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 1px;
+    background: #ccc;
+    margin: 30px auto 0;
+    opacity: 0.3;
+  }
+
+  @media screen and (max-width: 768px) {
+    .pdf-page {
+      max-width: 95vw;
+    }
+  }
+</style>
+
+<script>
+  const scrollBtn = document.querySelector('.scroll-top');
+  const pageIndicator = document.getElementById('pageIndicator');
+  const pages = document.querySelectorAll('.pdf-page');
+
+  window.addEventListener('scroll', () => {
+    // Hiện nút lên đầu nếu cuộn xuống
+    if (window.scrollY > 300) {
+      scrollBtn.classList.add('show');
+    } else {
+      scrollBtn.classList.remove('show');
+    }
+
+    // Cập nhật số trang
+    let currentPage = 1;
+    pages.forEach((page, index) => {
+      const rect = page.getBoundingClientRect();
+      if (rect.top <= window.innerHeight / 2) {
+        currentPage = index + 1;
+      }
+    });
+
+    pageIndicator.textContent = `Trang ${currentPage} / ${pages.length}`;
+  });
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  document.getElementById("languageSwitcher").addEventListener("change", function () {
+    const lang = this.value;
+    if (lang === "en") {
+      window.location.href = "camau_EN.html";
+    } else {
+      window.location.href = "camau.html";
+    }
+  });
+
+</script>

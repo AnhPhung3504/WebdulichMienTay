@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media</title>
+
+  <!-- CSS & Font -->
+  <link rel="stylesheet" href="/Css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- Script JS nếu cần -->
+  <!-- <script src="/js/index.js" defer></script> -->
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fefefe;
+      color: #333;
+    }
+
+    /* Navbar có thể nằm trong style.css riêng */
+    .banner {
+      width: 100%;
+      margin-bottom: 30px;
+      overflow: hidden;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      max-height: 1000px;
+      margin: 0 auto;
+      /* bạn có thể điều chỉnh chiều cao tối đa */
+    }
+
+    .media-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      color: #c0392b;
+    }
+
+    .video-section h2,
+    .gallery-section h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    video {
+      width: 100%;
+      max-height: 500px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .hover-image {
+      width: 90%;
+      max-width: 800px;
+      margin: 40px auto;
+      overflow: hidden;
+    }
+
+    .hover-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: 0.5s ease-in-out;
+    }
+
+    .hover-image:hover img {
+      content: url('/Hình ảnh/du lịt/en/3.png');
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      /* gap: 20px; */
+      margin-top: 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      /* border-radius: 10px; */
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-grid img:hover {
+      /* transform: scale(1.05); */
+      cursor: pointer;
+    }
+
+
+
+    footer {
+      background-color: #033e3e;
+      color: #fff;
+      padding: 40px 20px;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-col {
+      flex: 1 1 300px;
+      margin: 20px;
+    }
+
+    .footer-col h3 {
+      margin-bottom: 15px;
+      color: #ffcc00;
+    }
+
+    .social-icons a {
+      color: white;
+      margin-right: 10px;
+      font-size: 1.2em;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #555;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ====== HEADER / NAVBAR ====== -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <img src="/Hình ảnh/Logo (2).png" alt="Vietnam Timeless Charm" class="logo" />
+    </div>
+    </div>
+    <nav class="navbar-center">
+      <a href="index_EN.html">Home</a>
+      <div class="dropdown">
+        <a href="#">Landmarks - Culture - Cuisine</a>
+        <div class="map-dropdown">
+          <img src="/Hình ảnh/banner/ban do.png" usemap="#vietnam-map" alt="Mekong Delta Map" />
+          <map name="vietnam-map">
+            <area shape="poly" coords="199,217,177,228,212,258,185,302,216,301,222,328,258,335,289,305"
+              href="cantho_EN.html" alt="Can Tho" />
+            <area shape="poly" coords="125,320,111,419,119,313,238,337,152,415" href="camau_EN.html" alt="Ca Mau" />
+            <area shape="poly" coords="239,241,299,218,315,236,335,269,314,305" href="vinhlong_EN.html"
+              alt="Vinh Long" />
+            <area shape="poly" coords="152,148,95,230,155,250,122,321,175,323,195,264,164,223,190,203"
+              href="angiang_EN.html" alt="An Giang" />
+            <area shape="poly" coords="171,150,196,139,233,230,247,188,350,199,350,226" href="dongthap_EN.html"
+              alt="Dong Thap" />
+            <area shape="poly" coords="312,68,263,37,245,94,285,151,233,130,208,139,264,184,321,188,343,175,306,139"
+              href="tayninh_EN.html" alt="Tây Ninh" />
+          </map>
+        </div>
+      </div>
+      <a href="blog_EN.html">Blog</a>
+      <a href="media_EN.html">Media</a>
+    </nav>
+    <div class="navbar-right">
+      <select id="languageSwitcher">
+        <option value="vi">VI</option>
+        <option value="en" selected>EN</option>
+      </select>
+      <button class="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+  </header>
+
+  <!-- ====== MAIN CONTENT ====== -->
+  <main>
+    <div class="banner">
+      <img src="/Hình ảnh/du lịt/en/1.png" alt="Banner Du Lịch">
+    </div>
+
+    <!-- Video và bộ ảnh -->
+    <div class="media-container">
+      <h1>Explore Through the Lens</h1>
+
+      <div class="video-section">
+        <!-- <h2>Video Du Lịch</h2> -->
+        <video controls>
+          <source src="/video/video du lich.mov" type="video/mp4">
+          Trình duyệt của bạn không hỗ trợ video.
+        </video>
+      </div>
+
+
+      <div class="hover-image">
+        <img src="/Hình ảnh/du lịt/en/2.png" alt="Ảnh gốc">
+      </div>
+
+
+      <!-- <div class="gallery-section">
+        <h2>Bộ Ảnh Hành Trình</h2>
+        <div class="gallery-grid">
+          <img src="/Hình ảnh/các tỉnh/Cần thơ/bến ninh kiều.jpg" alt="Ảnh du lịch 1">
+          <img src="/Hình ảnh/các tỉnh/An Giang/núi cấm.jpg" alt="Ảnh du lịch 2">
+          <img src="/Hình ảnh/các tỉnh/Cà Mau/hon nui bac.webp" alt="Ảnh du lịch 3">
+          <img src="/Hình ảnh/các tỉnh/Cần thơ/chợ nổi 2.jpg" alt="Ảnh du lịch 4">
+          <img src="/Hình ảnh/các tỉnh/kiên giang/vuon-quoc-gia-u-minh-thuong-2.jpg" alt="Ảnh du lịch 5">
+          <img src="/Hình ảnh/các tỉnh/Hậu giang/khu-bao-ton-thien-nhien-lung-ngoc-hoang.jpg " alt="Ảnh du lịch 6">
+          <img src="/Hình ảnh/các tỉnh/Cà Mau/camau.webp" alt="Ảnh du lịch 7">
+          <img src="/Hình ảnh/các tỉnh/Tiền Giang/biển gò công.jpg" alt="Ảnh du lịch 8">
+          <img src="/Hình ảnh/các tỉnh/ngoai/image (2).png" alt="Ảnh du lịch 8">
+        </div>
+      </div>
+    </div> -->
+      <div class="gallery-section">
+        <h2>Journey Photo Album</h2>
+        <div class="gallery-grid">
+          <img src="/Hình ảnh/các tỉnh/Cần thơ/bến ninh kiều.jpg" data-hover="/Hình ảnh/du lịt/xeo quit.png"
+            alt="Ảnh du lịch 1">
+          <img src="/Hình ảnh/các tỉnh/An Giang/núi cấm.jpg" data-hover="/Hình ảnh/các tỉnh/ngoai/image (2).png"
+            alt="Ảnh du lịch 2">
+          <img src="/Hình ảnh/các tỉnh/Cà Mau/camau.webp"
+            data-hover="/Hình ảnh/các tỉnh/kiên giang/vuon-quoc-gia-u-minh-thuong-2.jpg" alt="Ảnh du lịch 2">
+          <img src="/Hình ảnh/các tỉnh/Cà Mau/hon nui bac.webp"
+            data-hover="/Hình ảnh/các tỉnh/Tiền Giang/biển gò công.jpg" alt="Ảnh du lịch 2">
+          <img src="/Hình ảnh/các tỉnh/Hậu giang/khu-bao-ton-thien-nhien-lung-ngoc-hoang.jpg "
+            data-hover="/Hình ảnh/các tỉnh/Sóc Trăng/samrong.jpg" alt="Ảnh du lịch 2">
+          <img src="/Hình ảnh/các tỉnh/Bạc Liêu/nhà nón lá.jpg" data-hover="/Hình ảnh/du lịt/ca mau.png"
+            alt="Ảnh du lịch 2">
+
+        </div>
+      </div>
+
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col newsletter">
+        <h3>Subscribe for the Latest Updates</h3>
+        <p>Receive monthly updates on Southwest travel stories directly to your email.</p>
+        <input type="email" placeholder="Your email">
+        <button>Subscribe</button>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p style="margin-top:10px;">Find inspiration by exploring the Southwest region on social platforms.</p>
+      </div>
+      <div class="footer-col">
+        <h3>About Us</h3>
+        <p>
+          We provide information about traveling in the Mekong Delta. Discover stunning landscapes, unique
+          culture, and diverse cuisine across this beautiful country of Vietnam.
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; Southwest Travel 2025</div>
+  </footer>
+
+</body>
+
+</html>
+
+
+<script>
+  const images = document.querySelectorAll('.gallery-grid img');
+
+  images.forEach(img => {
+    const originalSrc = img.src;
+    const hoverSrc = img.dataset.hover;
+
+    if (hoverSrc) {
+      img.addEventListener('mouseover', () => {
+        img.src = hoverSrc;
+      });
+
+      img.addEventListener('mouseout', () => {
+        img.src = originalSrc;
+      });
+    }
+  });
+
+  // tieng anh
+  document.getElementById("languageSwitcher").addEventListener("change", function () {
+    const lang = this.value;
+    if (lang === "vi") {
+      window.location.href = "media.html"; // đường dẫn trang tiếng Anh của bạn
+    } else {
+      window.location.href = "media_EN.html"; // đường dẫn trang tiếng Việt
+    }
+  });
+</script>
