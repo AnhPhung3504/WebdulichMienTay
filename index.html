@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ký sự miền sông nước</title>
   <link rel="stylesheet" href="Css/style.css" />
-<script src="js/index.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -31,8 +30,8 @@
               href="angiang.html" alt="An Giang" />
             <area shape="poly" coords="171,150,196,139,233,230,247,188,350,199,350,226" href="dongthap.html"
               alt="Đồng Tháp" />
-            <area shape="poly" coords="312,68,263,37,245,94,285,151,233,130,208,139,264,184,321,188,343,175,306,139" href="tayninh.html"
-              alt="Tây Ninh" />
+            <area shape="poly" coords="312,68,263,37,245,94,285,151,233,130,208,139,264,184,321,188,343,175,306,139"
+              href="tayninh.html" alt="Tây Ninh" />
           </map>
         </div>
       </div>
@@ -40,12 +39,12 @@
       <a href="media.html">Hình ảnh</a>
     </nav>
     <div class="navbar-right">
-    <select id="languageSwitcher">
-      <option value="vi" selected>VI</option>
-      <option value="en">EN</option>
-    </select>
-    <button class="search-btn"><i class="fas fa-search"></i></button>
-  </div>
+      <select id="languageSwitcher">
+        <option value="vi" selected>VI</option>
+        <option value="en">EN</option>
+      </select>
+      <button class="search-btn"><i class="fas fa-search"></i></button>
+    </div>
   </header>
   <main>
 
@@ -290,8 +289,9 @@
       &copy; Du lịch Miền tây 2025
     </div>
   </footer>
-  <script src="../js/index.js"></script>
+  <script src="js/index.js"></script>
 </body>
+
 </html>
 
 <script>
@@ -344,9 +344,9 @@
   document.getElementById("languageSwitcher").addEventListener("change", function () {
     const lang = this.value;
     if (lang === "en") {
-      window.location.href = "index_EN.html"; 
+      window.location.href = "index_EN.html";
     } else {
-      window.location.href = "index.html"; 
+      window.location.href = "index.html";
     }
   });
 </script>
