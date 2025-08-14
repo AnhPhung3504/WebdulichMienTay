@@ -818,11 +818,21 @@ button {
   color: #fff;
 }
 
-/* Responsive cho màn hình nhỏ hơn 768px */
+/* Hamburger menu mặc định ẩn trên desktop */
+.navbar-toggle {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive cho màn hình nhỏ hơn hoặc bằng 768px */
 @media (max-width: 768px) {
+  /* Navbar */
   .navbar {
     flex-wrap: wrap;
     padding: 10px 15px;
+    justify-content: space-between;
   }
 
   .navbar-left {
@@ -837,16 +847,31 @@ button {
     height: 60px;
   }
 
+  /* Menu */
   .navbar-center {
-    flex: 1 1 100%;
-    display: flex;
-    flex-direction: column; /* xếp menu dọc */
+    display: none;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
+    background-color: #0F5132;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .navbar-center.show {
+    display: flex;
   }
 
   .navbar-center a {
     font-size: 16px;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-left, .navbar-right {
+    flex: 1;
   }
 
   .navbar-right {
@@ -855,15 +880,30 @@ button {
     margin-top: 10px;
   }
 
-  /* Hero text nhỏ hơn trên mobile */
+  /* Hero text */
   .hero-text {
     font-size: 28px;
     padding: 6px 12px;
   }
 
-  /* Giới thiệu thu nhỏ chiều cao */
+  /* Introduce section */
   .introduce {
     height: auto;
     padding: 20px;
+  }
+
+  /* Events section */
+  .events-wrapper {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .event-gallery {
+    flex-wrap: wrap;
+  }
+
+  .event-item {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
