@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="Css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
@@ -15,6 +16,8 @@
     <div class="navbar-left">
       <img src="Hình ảnh/Logo (2).png" alt="Vietnam Timeless Charm" class="logo" />
     </div>
+    </div>
+    <div class="navbar-toggle" id="mobileMenuToggle">☰
     </div>
     <nav class="navbar-center">
       <a href="index_EN.html">Home</a>
@@ -52,8 +55,8 @@
   <main>
     <section class="hero">
       <div class="slideshow-container">
-        <div class="slide fade"><img src="Hình ảnh/Ảnh chung chung ĐBSCL/du lịch miền tây/en/Design.png"
-            alt="Banner 1"></div>
+        <div class="slide fade"><img src="Hình ảnh/Ảnh chung chung ĐBSCL/du lịch miền tây/en/Design.png" alt="Banner 1">
+        </div>
         <div class="slide fade"><img src="Hình ảnh/Ảnh chung chung ĐBSCL/du lịch miền tây/en/2.png" alt="Banner 2">
         </div>
         <div class="slide fade"><img src="Hình ảnh/Ảnh chung chung ĐBSCL/du lịch miền tây/en/3.png" alt="Banner 3">
@@ -328,5 +331,10 @@
     } else {
       window.location.href = "index_EN.html"; // đường dẫn trang tiếng Việt
     }
+  });
+
+
+  document.getElementById("mobileMenuToggle").addEventListener("click", function () {
+    document.querySelector(".navbar-center").classList.toggle("show");
   });
 </script>
