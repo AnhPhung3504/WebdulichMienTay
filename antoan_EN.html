@@ -88,12 +88,9 @@
 <body>
 
   <!-- Header -->
-    <header class="navbar">
+  <header class="navbar">
     <div class="navbar-left">
       <img src="Hình ảnh/Logo (2).png" alt="Vietnam Timeless Charm" class="logo" />
-    </div>
-    </div>
-    <div class="navbar-toggle" id="mobileMenuToggle">☰
     </div>
     <nav class="navbar-center">
       <a href="index_EN.html">Home</a>
@@ -125,6 +122,9 @@
         <option value="en" selected>EN</option>
       </select>
       <button class="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+    </div>
+    <div class="navbar-toggle" id="mobileMenuToggle">☰
     </div>
   </header>
 
@@ -218,9 +218,9 @@
         window.location.href = "antoan_EN.html"; // đường dẫn trang tiếng Việt
       }
     });
-      document.getElementById("mobileMenuToggle").addEventListener("click", function () {
-    document.querySelector(".navbar-center").classList.toggle("show");
-  });
+    document.getElementById("mobileMenuToggle").addEventListener("click", function () {
+      document.querySelector(".navbar-center").classList.toggle("show");
+    });
   </script>
 </body>
 
